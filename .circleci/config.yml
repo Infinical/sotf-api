@@ -8,13 +8,13 @@ jobs:
     docker:
       # specify the version you desire here
       - image: circleci/ruby:2.6.3
-         environment:
+        environment:
           BUNDLER_VERSION: 2.0.2
           RAILS_ENV: test
           PGHOST: 127.0.01
           PGUSER: root
       - image: circleci/postgres:10.9
-         environment:
+        environment:
           POSTGRES_USER: root
           POSTGRES_DB: sotf-api_test
       # Specify service dependencies here if necessary
